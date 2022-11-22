@@ -877,6 +877,8 @@ padding-top: 60px;
 }
 .portfolio-active {
   position: relative;
+  text-decoration:none;
+  color:inherit;
 }
 .portfolio-active::after {
   content: "";
