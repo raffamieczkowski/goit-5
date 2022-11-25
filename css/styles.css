@@ -220,9 +220,9 @@ img {
 }
 .hero {
   background-color: #2f303a;
-  background-image: url ("/Images/background-hero.jpg");
-  background-size: cover;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url("../Images/background-hero.jpg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero .container {
@@ -608,12 +608,6 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
 .fourth-lorem {
   padding: 25px 0;
 }
-.hero {
-  background-color: #2f303a;
-  background-image: url("../Images/background-hero.jpg");
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4))
-  background-position: center;
-}
 .client-section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -677,13 +671,14 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     fill: #FFFFFF;
   }
 .join-to-to{
-height: 0px;
 font-family: Roboto;
 font-size: 14px;
 font-weight: 700;
 line-height: 16px;
 letter-spacing: 0.03em;
 color:#FFFFFF;
+padding-top:72px;
+padding-bottom: 20px;
 }
 
 .container-join-to{
@@ -823,17 +818,24 @@ padding-top: 60px;
 }
 .stopa {
   background-color: #2f303a;
+  height: 272px;
 }
 .logo-stopka {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  
 }
 .webstudio-footer {
   display: flex;
-  margin-top: 60px;
+  padding-right: 70px;
+  padding-top: 60px;
+  /* margin-top: 60px; */
+}
+.webstudio-footer-icon{
+  display: flex;
+  padding-right: 70px;
+
 }
 .logo-dol {
   display: flex;
@@ -910,6 +912,7 @@ padding-top: 60px;
 .jointous{
   display: flex;
   justify-items: auto;
+  align-items: flex-start;
 }
 .agencja-active {
   position: relative;
@@ -1034,6 +1037,7 @@ color: #2196f3;
   width: 100%;
   height: 100%;
   transform: translateY(100%);
+  transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   background-color: rgba(33, 150, 243, 0.9);
